@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Slab&display=swap');
+
+$light-color: #fff;
+$dark-color: #352f2f;
+$primary-color: #fcab10;
+$secondary-color: #f8333c;
+$green: #44af69;
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto Slab', serif;
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-weight: 280;
+  line-height: 1.5rem;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+@mixin icon-button {
+  border: none;
+  outline: none;
+  background: none;
+}
+@mixin col-2 {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+@mixin large-size{
+  font-size: 2.3rem;
+}
+@mixin ease-out{
+  transition: .5s;
+}
+@mixin break-point {
+  grid-template-columns: 1fr;
+}
+
+
+@mixin mediaSm{
+  @media screen and (max-width: 500px){
+    @content
+  }
+}
+@mixin mediaMd{
+  @media screen and (min-width: 767px){
+    @content
+  }
+}
+@mixin mediaLg{
+  @media screen and (min-width: 768px) and (max-width: 1170px) {
+    @content
+  }
+}

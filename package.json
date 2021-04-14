@@ -1,0 +1,12 @@
+{
+  "name": "cp-bisnis-sablon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/style.scss dist/css/style.css"
+  },
+  "author": "adam daffa",
+  "license": "MIT"
+}
