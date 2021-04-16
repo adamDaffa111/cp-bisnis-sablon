@@ -65,9 +65,6 @@
    
    .banner {
      margin-top: -2.3rem;
-      button {
-       display: none;
-     }
    }
  }
 
@@ -87,6 +84,7 @@
     .steps {
       grid-template-columns: 1fr;
       &:before {
+        top: -40px;
         left: 50%;
         transform: translatex(-50%);
         z-index: 0; 
@@ -128,10 +126,12 @@
 
 .map-section {
   text-align: center;
-  margin: 3rem 0;
   h2 {
    @include large-size;
    font-weight: 300;
+  }
+  .embed-map iframe {
+   width: 100%;
   }
 }
 
